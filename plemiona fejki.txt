@@ -102,10 +102,10 @@ function Faking() {
                 fillExact: 'false',
                 skipVillages: 'true',
                 safeguard: {},
-                localContext: '5',
-                customContexts: '',
-                boundingBoxes: [],
-                targetUniquePlayers: false
+                //localContext: '5',
+                //customContexts: '',
+                //boundingBoxes: [],
+                //targetUniquePlayers: false
             },
             _localContextKey: `HermitowskieFejki_${game_data.village.id}`,
             _cache_control_key: `HermitowskieFejki_CacheControl`,
