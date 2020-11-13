@@ -2,7 +2,7 @@
 // ==UserScript==
 // @name    	Fejk od tak
 // @version 	1.0
-// @author  	Puchacz x Hermit x Extaz
+// @author  	Puchacz Tha K1ng
 // @include   	 http*://pl*.plemiona.pl/game.php?village=*&screen=place*
 // @include   	 http*://pl*.plemiona.pl/game.php?screen=place*
 // ==/UserScript==
@@ -759,16 +759,19 @@ function rand (min, max) {
 var argc = arguments.length;
 
 return Math.floor(Math.random() * (max - min + 1)) + min;
-
+}
 var czas = rand(500, 3000); // Losowy czas pomidzy 1MS a 8 sek
 
+for(let i = 0; i != 4; ++i){
 
-    setTimeout(window.location.href.indexOf("confirm"))
-    setTimeout('$( "#target_attack" ).trigger( "click" );', czas);
-
-    setTimeout(window.location.href.indexOf("command"))
-	setTimeout('$( "#troop_confirm_go" ).trigger( "click" );', czas);
-
+setTimeout('$( "#target_attack" ).trigger( "click" );', czas);
+$(document).ready(function () {
+setTimeout(window.location.href.indexOf("confirm") > -1)
+    setTimeout('$( "#troop_confirm_go" ).trigger( "click" );', czas);
+});
+    if(window.location.href.indexOf("confirm") > -1){
+    setTimeout('$( "#village_switch_right" ).trigger( "click" );', czas);
+}
 }
 if(i === 4){
     window.location = $('#village_switch_right')[0];}
