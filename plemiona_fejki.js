@@ -2,7 +2,7 @@
 // ==UserScript==
 // @name    	Fejk od tak
 // @version 	1.0
-// @author  	ExTaza?!
+// @author  	Puchacz x Hermit x Extaz
 // @include   	 http*://pl*.plemiona.pl/game.php?village=*&screen=place*
 // @include   	 http*://pl*.plemiona.pl/game.php?screen=place*
 // ==/UserScript==
